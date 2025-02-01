@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('create') {
             steps {
-                touch emptyfile.txt
+                sh 'touch emptyfile.txt'
             }
         }
          stage('print') {
